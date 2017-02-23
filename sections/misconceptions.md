@@ -1,3 +1,5 @@
+## Security Misconceptions
+
 ### "I'm safe because I use encryption!"
 
 You can replace "encryption" above with an antivirus, a VPN, two-factor auth, an "awesome" system for coming up with passwords, or many other reassuring tools and methods. Try not to become complacent because you use something other people don't use—this overconfidence can lead to unsafe behaviors that you might otherwise have avoided. Remember that there are no magic bullets.
