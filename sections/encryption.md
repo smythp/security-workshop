@@ -1,3 +1,5 @@
+[<<< Previous](os.md) | [Next >>>](gpg.md)
+
 ## Encryption
 
 Have you ever used a cipher? Probably the most famous cipher is the Caesar Cipher, in which a message is encoded by moving each letter a fixed position down the alphabet. For example, the message
@@ -25,3 +27,5 @@ With the rise of the internet, this problem became a lot more serious. Communica
 The insight that public/private key encryption is based on is that you can create one key to encrypt information and a separate one to decrypt that information. The encryption key is made public, and is referred to as the "public key." The key for decryption is kept private, and is known as the "private key." To create a secure message, the sender uses a public key to encrypt the message. On the other end, the recipient uses their private key to decrypt it. The power of this system is that it doesn't matter if the public key is intercepted by a third party. In fact, it's better if the public key is widely known. Since the public key can only be used to encrypt, but not to decrypt, a message, it won't help a third party to decrypt an intercepted communication.
 
 For example, imagine that Maria is a journalist. She wants people to be able to send her secure communications if they choose. She creates a public/private key pair using a tool such as GPG. She keeps the private key on her computer and doesn't share it with anyone. The public key she places on her website for anyone to see. Say that Catherine, a whistleblower, wants to send Maria a secure message. She would first use the public key on Maria's website to encrypt it. Once it's been encrypted, even Catherine isn't able to decrypt the message—she doesn't have the private key. Catherine then sends the encrypted message to Maria. Maria uses her private key to decrypt the message and reads it.
+
+[<<< Previous](os.md) | [Next >>>](gpg.md)

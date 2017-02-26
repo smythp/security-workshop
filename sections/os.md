@@ -1,3 +1,5 @@
+[<<< Previous](browser.md) | [Next >>>](encryption.md)
+
 ## OS Security
 
 ### OS Security Comparison
@@ -15,3 +17,5 @@ In general, and especially with Windows, keep all your software and your operati
 To provide an additional layer of physical security, consider using a solution for encrypting your whole hard drive. Microsoft [BitLocker](https://en.wikipedia.org/wiki/BitLocker) has some issues, but it can protect you from hackers and malicious intruders, though not state actors. Another solution is [Symantec Disk Encryption with PGP](https://www.symantec.com/products/information-protection/encryption/endpoint-encryption), which is usable on Windows machines. Apple has its own equivelant of BitLocker called FileVault that is more secure as long as you disable storing your keys on iCloud. Many Linux distributions, such as Ubuntu, have the option to encrypt the entire disk by default. With these solutions, make sure to turn on password or PIN security for when the computer boots, and power off rather than shut down your machine while in transit.
 
 On OSX, consider not using iCloud integrations when possible, as this has been a security sore spot on the OS. While Microsoft offers some security options in Windows 10, there have been numerous examples of the OS ignoring user settings for privacy and security.
+
+[<<< Previous](browser.md) | [Next >>>](encryption.md)

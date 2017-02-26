@@ -1,3 +1,5 @@
+[<<< Previous](gpg.md) | [Next >>>](vpn.md)
+
 
 ## Authentication
 
@@ -19,4 +21,10 @@ If you are operating under elevated threat, use many services, are high profile,
 - Enable two-factor authentication on all services that offer it
 - Actively delete accounts that you do not use
 - Don't answer security questions with real information. Instead, decide on false information that you will be able to remember and use that as the answer to security questions. Think of security questions as additional passwords, not as questions.
+
+
+[<<< Previous](gpg.md) | [Next >>>](vpn.mdvpn.md)
+
+
+
 

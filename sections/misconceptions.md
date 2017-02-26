@@ -1,3 +1,5 @@
+[Next >>>](threat-models.md)
+
 ## Security Misconceptions
 
 ### "I'm safe because I use encryption!"
@@ -19,3 +21,5 @@ It's easy to think it's inevitable that your privacy will be violated online and
 ### "I've got nothing to hide!"
 
 When you hear someone say this, ask them for their phone so you can read their email. (I've yet to have someone take me up on this.) This statement is a callous one, and comes from a place of privilege. Many people—persecuted minorities, victims of harassment or domestic abuse—do not have the option to have "nothing to hide" through no choice of their own. Others, such as journalists, doctors, and lawyers, have ethical and legal oblications to keep their communications private. Finally, whistleblowers, who serve a vital social function, face reprisal if they do not maintain secure communications.
+
+[Next >>>](threat-models.md)

@@ -1,3 +1,5 @@
+[<<< Previous](encryption.md) | [Next >>>](authentication.md)
+
 ## GPG
 
 GPG is an implementation of PGP (Pretty Good Privacy), a set of algorithms and utilities for encryption. We'll use GPG to make a public/private key pair and we'll encrypt a message using our new public key.
@@ -80,3 +82,5 @@ This will create a file called readable-message.txt in the same folder that shou
 
 
 
+
+[<<< Previous](encryption.md) | [Next >>>](authentication.md)

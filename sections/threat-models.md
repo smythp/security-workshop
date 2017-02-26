@@ -1,3 +1,5 @@
+[<<< Previous](misconceptions.md) | [Next >>>](thumb.md)
+
 ## Threat Models
 
 Threat modelling is an exercise in imagining how things could go wrong—how a third party could tamper with your data, impersonate you, or perform other undesirable actions. It's an approach used in information security to identify and remove weak points in a system before they can be exploited.
@@ -21,3 +23,5 @@ It's reasonable to ask why an assessment of possible threats is necessary for se
 Unfortunately, when it comes to computer security, there is always a trade-off between convenience and protection. The more secure you need to be, the more knowledge and effort will be required to approach that level of protection. Guarding yourself against state actors or advanced persistent threats requires significant technical knowledge and resources, while protecting yourself against mass-targeted attacks is within the reach of the average computer user.
 
 [STRIDE threat model system](https://msdn.microsoft.com/en-us/library/ee823878(v=cs.20).aspx)  
+
+[<<< Previous](misconceptions.md) | [Next >>>](thumb.md)

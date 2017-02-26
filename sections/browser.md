@@ -1,3 +1,5 @@
+[<<< Previous](thumb.md) | [Next >>>](os.md)
+
 
 ## Browser Security
 
@@ -8,4 +10,4 @@
 5. Install Blur or Do Not Track Plus for your respective browser, which make it harder for sites to track you.
 5. If you have an elevated threat model, consider using the [Tor browser](https://www.torproject.org/) for considerably elevated (though still not foolproof) security.
 
-
+[<<< Previous](thumb.md) | [Next >>>](os.md)
