@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Computer Security</title>
+<meta name="author" content="(Patrick Smyth)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/css/theme/simple.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1>Computer Security</h1>
+</section>
+<style>.reveal section img { background:none; border:none; box-shadow:none; }
+li {text-align:center;top: 3px;list-style-type: none;}</style>
+
+<section>
+<section id="slide-orgheadline1">
+<h2 id="orgheadline1">Are we "post-security"?</h2>
+<ul>
+<li>Equifax hack</li>
+<li>Fear, Uncertainty, Doubt (FUD)</li>
+<li>Pandora's Box</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h2 id="orgheadline7">Security Misconceptions</h2>
+<div class="outline-text-2" id="text-orgheadline7">
+</div></section>
+<section id="slide-orgheadline2">
+<h3 id="orgheadline2">"I'm safe because I use encryption!"</h3>
+</section>
+<section id="slide-orgheadline3">
+<h3 id="orgheadline3">"I've never been hacked before&#x2026;"</h3>
+</section>
+<section id="slide-orgheadline4">
+<h3 id="orgheadline4">"Digital life isn't real life."</h3>
+</section>
+<section id="slide-orgheadline5">
+<h3 id="orgheadline5">"I'm going to get hacked anyway&#x2026;"</h3>
+</section>
+<section id="slide-orgheadline6">
+<h3 id="orgheadline6">"I've got nothing to hide!"</h3>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
+<h2 id="orgheadline9">Adversarial Thinking</h2>
+<ul>
+<li>Red Team vs. Blue Team</li>
+<li>Black Hat vs. White Hat</li>
+<li>Penetration testing</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline8">
+<h3 id="orgheadline8"></h3>
+<div style="text-align:left;align:center;width:80%;">
+<p>
+If you cannot think of three ways of abusing a tool, you do not understand how to use it.
+</p>
+</div>
+<p>
+– Gerald Weinberg
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline10">
+<h2 id="orgheadline10">Threat Modelling</h2>
+<ul>
+<li>Convenience vs. protection</li>
+<li>Identifying threat level</li>
+<li>Perfect safety?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline18">
+<h2 id="orgheadline18">Threats</h2>
+<div class="outline-text-2" id="text-orgheadline18">
+</div></section>
+<section id="slide-orgheadline11">
+<h3 id="orgheadline11"></h3>
+<div style="width:50%;float:left">
+<img src="images/sinister_roommate.jpg" style="width: 100%">
+</div>
+<div style="width:50%;float: left">
+<br><br>
+<h2>&nbsp;&nbsp;Individual</h2>
+</div>
+
+</section>
+<section id="slide-orgheadline12">
+<h3 id="orgheadline12"></h3>
+<div style="width:50%;float:left">
+<br><br>
+<h2>&nbsp;&nbsp;Administrator</h2>
+</div>
+<div style="width:50%;float: left">
+<img src="images/boss.png" style="width: 100%">
+</div>
+
+</section>
+<section id="slide-orgheadline13">
+<h3 id="orgheadline13"></h3>
+<div style="width:50%;float:left">
+<img src="images/isp.jpg" style="width: 100%">
+</div>
+<div style="width:50%;float: left">
+<br><br>
+<h2>&nbsp;&nbsp;Internet Service Provider (SP)</h2>
+</div>
+
+</section>
+<section id="slide-orgheadline14">
+<h3 id="orgheadline14"></h3>
+<div style="width:50%;float:left">
+<br><br>
+<h2>&nbsp;&nbsp;Criminal</h2>
+</div>
+<div style="width:50%;float: left">
+<img src="images/criminal.jpg" style="width: 100%">
+</div>
+
+</section>
+<section id="slide-orgheadline15">
+<h3 id="orgheadline15"></h3>
+<div style="width:50%;float:left">
+<img src="images/corp.jpg" style="width: 100%">
+</div>
+<div style="width:50%;float: left">
+<br><br>
+<h2>&nbsp;&nbsp;Corporation</h2>
+</div>
+
+</section>
+<section id="slide-orgheadline16">
+<h3 id="orgheadline16"></h3>
+<div style="width:50%;float:left">
+<br><br>
+<h2>&nbsp;&nbsp;Interest Group</h2>
+</div>
+<div style="width:50%;float: left">
+<img src="images/anon'.jpg" style="width: 100%">
+</div>
+
+</section>
+<section id="slide-orgheadline17">
+<h3 id="orgheadline17">Advanced Persistent Threat</h3>
+
+<div class="figure">
+<p><img src="./images/apt.jpg" alt="apt.jpg" width="100%" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline22">
+<h2 id="orgheadline22">Concepts</h2>
+<div class="outline-text-2" id="text-orgheadline22">
+</div></section>
+<section id="slide-orgheadline19">
+<h3 id="orgheadline19">Ciphers</h3>
+</section>
+<section id="slide-orgheadline20">
+<h3 id="orgheadline20">Encryption</h3>
+</section>
+<section id="slide-orgheadline21">
+<h3 id="orgheadline21">Steganography</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline28">
+<h2 id="orgheadline28">Threats</h2>
+<div class="outline-text-2" id="text-orgheadline28">
+</div></section>
+<section id="slide-orgheadline23">
+<h3 id="orgheadline23">Social Engineering</h3>
+<ul>
+<li>Phishing</li>
+<li>Spear Phishing</li>
+<li>Man in the Middle</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline24">
+<h3 id="orgheadline24">Trojans</h3>
+<ul>
+<li>Spyware</li>
+<li>Keyloggers</li>
+<li>Ransomware</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline25">
+<h3 id="orgheadline25">Distributed Denial of Service</h3>
+<ul>
+<li>Brute Force Attack</li>
+<li>Botnet</li>
+<li>Slashdotting</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline26">
+<h3 id="orgheadline26">Telemetry</h3>
+<ul>
+<li>Operating System telemetry</li>
+<li>Internet Service Provider monitoring</li>
+<li>Services (Google, Facebook, LinkedIn)</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline27">
+<h3 id="orgheadline27">Physical Attack</h3>
+<ul>
+<li>"Rubber Hose Cryptanalysis"</li>
+<li>Dumpster Diving</li>
+<li>Interdiction</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline33">
+<h2 id="orgheadline33">Mitigations</h2>
+<div class="outline-text-2" id="text-orgheadline33">
+</div></section>
+<section id="slide-orgheadline29">
+<h3 id="orgheadline29">Browser Security</h3>
+<p>
+Everyone:
+</p>
+<ul>
+<li>Incognito?</li>
+<li>Adblock</li>
+<li>HTTPS</li>
+<li>DuckDuckGo</li>
+<li>Firefox</li>
+
+</ul>
+<hr>
+<p>
+Heightened:
+</p>
+<ul>
+<li>Virtual Private Networks</li>
+<li>No Javascript</li>
+<li>TOR (The Onion Router)</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline30">
+<h3 id="orgheadline30">Authentication</h3>
+<p>
+Everyone:
+</p>
+<ul>
+<li>Don't reuse passwords!</li>
+<li>Strong passwords</li>
+<li>Passphrases</li>
+<li>Password manager</li>
+
+</ul>
+<hr>
+<p>
+Heightened:
+</p>
+<ul>
+<li>Two-factor authentication</li>
+<li>Obfuscated security questions</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline31">
+<h3 id="orgheadline31">Operating System Security</h3>
+<p>
+Everyone:
+</p>
+<ul>
+<li>Keep up-to-date!</li>
+<li>Antivirus</li>
+<li>Lock your screen</li>
+<li>Disable hidden file extensions</li>
+<li>UAC (think three times!)</li>
+
+</ul>
+<hr>
+<p>
+Heightened:
+</p>
+<ul>
+<li>Disable telemetry</li>
+<li>Use Linux</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline32">
+<h3 id="orgheadline32">Communication</h3>
+<p>
+Everyone:
+</p>
+<ul>
+<li>Encrypted communication (WhatsApp, iMessage)</li>
+
+</ul>
+<hr>
+<p>
+Heightened:
+</p>
+<ul>
+<li>Signal</li>
+<li>PGP (Pretty Good Privacy)</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.20,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

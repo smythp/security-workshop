@@ -1,0 +1,179 @@
+#+TITLE: Computer Security
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:nil
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_THEME: simple
+#+REVEAL_HLEVEL: 1
+#+REVEAL_HTML: <style>.reveal section img { background:none; border:none; box-shadow:none; }
+#+REVEAL_HTML: li {text-align:center;top: 3px;list-style-type: none;}</style>
+
+* Are we "post-security"?
+- Equifax hack
+- Fear, Uncertainty, Doubt (FUD)
+- Pandora's Box
+
+* Security Misconceptions
+** "I'm safe because I use encryption!"
+** "I've never been hacked before..."
+** "Digital life isn't real life."
+** "I'm going to get hacked anyway..."
+** "I've got nothing to hide!"
+
+
+
+* Adversarial Thinking
+- Red Team vs. Blue Team
+- Black Hat vs. White Hat
+- Penetration testing
+
+** 
+#+HTML: <div style="text-align:left;align:center;width:80%;">
+If you cannot think of three ways of abusing a tool, you do not understand how to use it.
+#+HTML: </div>
+– Gerald Weinberg
+
+* Threat Modelling
+- Convenience vs. protection
+- Identifying threat level
+- Perfect safety?
+
+* Threats
+** 
+#+REVEAL_HTML: <div style="width:50%;float:left">
+#+REVEAL_HTML: 
+#+REVEAL_HTML: <img src="images/sinister_roommate.jpg" style="width: 100%">
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div style="width:50%;float: left">
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h2>&nbsp;&nbsp;Individual</h2>
+#+REVEAL_HTML: </div>
+
+** 
+#+REVEAL_HTML: <div style="width:50%;float:left">
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h2>&nbsp;&nbsp;Administrator</h2>
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div style="width:50%;float: left">
+#+REVEAL_HTML: <img src="images/boss.png" style="width: 100%">
+#+REVEAL_HTML: </div>
+
+** 
+#+REVEAL_HTML: <div style="width:50%;float:left">
+#+REVEAL_HTML: 
+#+REVEAL_HTML: <img src="images/isp.jpg" style="width: 100%">
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div style="width:50%;float: left">
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h2>&nbsp;&nbsp;Internet Service Provider (SP)</h2>
+#+REVEAL_HTML: </div>
+
+** 
+#+REVEAL_HTML: <div style="width:50%;float:left">
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h2>&nbsp;&nbsp;Criminal</h2>
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div style="width:50%;float: left">
+#+REVEAL_HTML: <img src="images/criminal.jpg" style="width: 100%">
+#+REVEAL_HTML: </div>
+
+** 
+#+REVEAL_HTML: <div style="width:50%;float:left">
+#+REVEAL_HTML: 
+#+REVEAL_HTML: <img src="images/corp.jpg" style="width: 100%">
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div style="width:50%;float: left">
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h2>&nbsp;&nbsp;Corporation</h2>
+#+REVEAL_HTML: </div>
+
+** 
+#+REVEAL_HTML: <div style="width:50%;float:left">
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h2>&nbsp;&nbsp;Interest Group</h2>
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div style="width:50%;float: left">
+#+REVEAL_HTML: <img src="images/anon'.jpg" style="width: 100%">
+#+REVEAL_HTML: </div>
+
+** Advanced Persistent Threat
+#+ATTR_HTML: :width 100%
+[[./images/apt.jpg]]
+
+* Concepts
+
+** Ciphers
+** Encryption
+** Steganography
+
+* Threats
+
+** Social Engineering
+- Phishing
+- Spear Phishing
+- Man in the Middle
+** Trojans
+- Spyware
+- Keyloggers
+- Ransomware
+** Distributed Denial of Service
+- Brute Force Attack
+- Botnet
+- Slashdotting
+** Telemetry
+- Operating System telemetry
+- Internet Service Provider monitoring
+- Services (Google, Facebook, LinkedIn)
+** Physical Attack
+- "Rubber Hose Cryptanalysis"
+- Dumpster Diving
+- Interdiction
+
+* Mitigations
+
+** Browser Security
+Everyone:
+- Incognito?
+- Adblock
+- HTTPS
+- DuckDuckGo
+- Firefox
+#+HTML:<hr>
+Heightened:
+- Virtual Private Networks
+- No Javascript
+- TOR (The Onion Router)
+
+** Authentication
+Everyone:
+- Don't reuse passwords!
+- Strong passwords
+- Passphrases
+- Password manager
+#+HTML:<hr>
+Heightened:
+- Two-factor authentication
+- Obfuscated security questions
+
+** Operating System Security
+Everyone:
+- Keep up-to-date!
+- Antivirus
+- Lock your screen
+- Disable hidden file extensions
+- UAC (think three times!)
+#+HTML:<hr>
+Heightened:
+- Disable telemetry
+- Use Linux
+
+** Communication
+Everyone:
+- Encrypted communication (WhatsApp, iMessage)
+#+HTML:<hr>
+Heightened:
+- Signal
+- PGP (Pretty Good Privacy)
