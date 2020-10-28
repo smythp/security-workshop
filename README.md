@@ -9,3 +9,5 @@
 [GPG](sections/gpg.md)  
 [Authentication](sections/authentication.md)  
 [VPNs](sections/vpn.md)  
+
+[Presentation for Amateur Computer Club](https://pbsmyth.github.io/security-workshop/presentation/index.html#/sec-title-slide)
